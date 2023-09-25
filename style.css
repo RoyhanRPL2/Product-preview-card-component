@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container .wrapper {
+    background-color: hsl(0, 0%, 100%);
+    width: 40%;
+    height: 60%;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.container .wrapper .product-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+}
+
+.container .wrapper .product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px 0 0 10px;
+}
+
+.container .wrapper article {
+    height: 100%;
+    display: inline-block;
+    padding: 3rem 2rem;
+}
+
+.wrapper article > #item-type {
+    margin-bottom: 1.5rem;
+    font-family: 'Montserrat',
+    sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 59%);
+    letter-spacing: 0.3rem;
+}
+
+.wrapper article > #item-title {
+    margin-bottom: 1.5rem;
+    font-family: 'Fraunces',
+    serif;
+    font-size: 35px;
+    font-weight: 700;
+    color: hsl(0, 0%, 8%);
+}
+
+.wrapper article > #item-description {
+    padding-bottom: 1.5rem;
+    font-family: 'Montserrat',
+    sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: hsl(0, 0%, 59%);
+    line-height: 1.5;
+}
+
+.wrapper article > .item-price {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+
+.item-price h2 {
+    font-family: 'Fraunces',
+    serif;
+    font-size: 34px;
+    font-weight: 700;
+    color: hsl(158, 36%, 37%);
+    margin-right: 15px;
+}
+
+.item-price p {
+    font-family: 'Montserrat',
+    sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: hsl(0, 0%, 59%);
+    text-decoration: line-through;
+}
+
+.wrapper article > button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(158, 36%, 37%);
+    padding: 0.8rem 1rem;
+    border-radius: 5px;
+    border: none;
+}
+
+.item-cta .cart-image {
+    width: 10%;
+    margin-right: 10px;
+}
+
+.item-cta .cart-image img {
+    width: 100%;
+}
+
+.item-cta p {
+    font-family: 'Montserrat',
+    sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+}
+
+.item-cta:hover {
+    background-color: hsl(158, 36%, 30%);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+@media screen and (max-width: 768px) {
+    .container .wrapper {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .container .wrapper {
+        flex-direction: column;
+        width: 100%;
+        height: fit-content;
+    }
+
+    .container .wrapper .product-image {
+        width: 100%;
+        height: 250px;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .container .wrapper .product-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .container .wrapper article {
+        width: 100%;
+        height: 100%;
+        padding: 1.5rem 1.5rem;
+    }
+
+    .container .wrapper article > #item-type {
+        margin-bottom: 1rem;
+        font-size: 12px;
+        letter-spacing: 0.2rem;
+    }
+
+    .container .wrapper article > #item-title {
+        margin-bottom: 1rem;
+        font-size: 25px;
+    }
+
+    .container .wrapper article > #item-description {
+        padding-bottom: 1rem;
+        font-size: 12px;
+    }
+
+    .container .wrapper article > .item-price {
+        padding-bottom: 1.5rem;
+    }
+
+    .item-price h2 {
+        font-size: 25px;
+    }
+
+    .item-price p {
+        font-size: 12px;
+    }
+
+    .wrapper article > button {
+        padding: 1rem 0.8rem;
+    }
+
+    .item-cta .cart-image {
+        width: 6%;
+    }
+
+    .item-cta .cart-image img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .item-cta p {
+        font-size: 16px;
+    }
+
+
+}
+
+
+
